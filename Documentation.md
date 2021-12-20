@@ -150,7 +150,7 @@ var createClientServerAuthCerts = serviceProvider.GetService<CreateCertificatesC
 
 The **NewRootCertificate** method creates a new root certificate which can be used for chained structures. If you use your own root certificate, it needs to be added to the trusted certificate store on deployment host.
 
-This is not needed if creting certificates from a public CA certificate. The root certificatge is a self signed certificate.
+This is not needed if creating certificates from a public CA certificate. The root certificatge is a self signed certificate.
 
 ```csharp
 var rootCaL1 = createClientServerAuthCerts.NewRootCertificate(
